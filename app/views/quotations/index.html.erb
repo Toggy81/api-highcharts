@@ -1,0 +1,27 @@
+<h1>Quotations#index</h1>
+<p>Find me in app/views/quotations/index.html.erb</p>
+
+<script> $(function () {
+    var chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container'
+        },
+
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+        }]
+    });
+
+    // The button action
+    $('#button').click(function() {
+        chart.series[0].setData([129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4] );
+    });
+
+    $('#button2').click(function() {
+        chart.series[0].setData([29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4] );
+    });
+});</script>
+
+<div id="container" style="height: 400px"></div>
+<button id="button">2013</button>
+<button id="button2">2014</button>
