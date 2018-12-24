@@ -16,7 +16,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'httparty'
-gem 'paloma', '~> 5.1.0'
+gem 'daru-view'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
